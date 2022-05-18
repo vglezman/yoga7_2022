@@ -3,85 +3,121 @@ body {
 background-color: #3F2860;
 color: #40407A;
 font-family: Verdana, Arial, sans-serif;
+margin: 0;
 }
 #wrapper { 
 background-color: #F5F5F5;
-margin-left: auto;
-margin-right: auto;
-width: 80%;
-min-width: 1200px;
-max-width: 1480px;		   
+padding: 2em;		   
 }
 header { 
 background-color: #80CBC4;
-background-image: url(lilyheader.jpg);
-background-position: right;
-background-repeat: no-repeat;
-height: 150px;
+background-image: url(sunrise.jpg);
+background-size: 100% 100%;
+color: #FFF;
+font-size: 90%;
+margin-top: 50px;
+min-height: 200px;
 }
 header a { text-decoration: none; }
-header a:link { color: #40407A; }
-header a:visited { color: #40407A; }
-header a:hover { color: #FFFFFF; }
-h1 { 
-padding-top: 50px; 
-padding-left: 2em; 
+header a:link { color: #FFF; }
+header a:visited { color: #FFF; }
+header a:hover { color: #EDF5F5; }
+.home, .conetent {
+height: 20vh;
+padding-left: 10%;
+padding-top: 2em; 
 }
 nav { 
-float: left;
-font-weight: bold; 
-padding: 1em;
-width: 160px;
+background-color: #FFF;
+position: fixed;
+left: 0;
+top: 0;
+margin: 0;
+padding: 0.5em 0 1em 1em;
+text-align: right;
+width: 100%;
+z-index: 9999;
 }
 nav a { 
-border: 3px outset #CCCCCC;
 display: block;
-margin-bottom: 1em; 
-padding: 1em;
-text-align: center;
 text-decoration: none; 
 }
 nav a:link { color: #3F2860; }
 nav a:visited { color: #497777; }
-nav a:hover { color: #A26100; border: 3px inset #333333; }
+nav a:hover { color: #A26100; }
 nav ul { 
-list-style-type: none; 
-padding-left: 0; 
+display: flex;
+flex-flow: row wrap;
+font-size: 1.2em;
+list-style-type: none;
+margin: 0;
 }
-main { 
-display: block;
-margin-left: 170px; 
-padding-left: 2em;
-padding-right: 2em;
-padding-top: 1em; 
+nav li { 
+display: inline;
+paddingL 0 1em;
+width: 40%;
 }
-.clear { clear: both; }
-.floatleft { 
-float: left; 
-margin-right: 4em;
-margin-bottom: 1em;
+#mathero {
+background-image: url(yogamat.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+height: 300px;
+display: none;
 }
-.onehalf { 
-float: left;
-padding-left: 2em;
-padding-right: 2em;
-width: 50%;
+#loungehero { 
+background-imahe: url(yogalounge.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+height: 300px;
+display: none;
 }
-.onethird { 
-float: left;
-padding-left: 2em;
-padding-right: 2em;
-width: 33%;
-}
+#mobile { display: inline; }
+#desktop { display: none;}
 .studio { font-style: italic; }
-#hero { 
-padding-bottom: 1em;
-padding-top: 1em;
+section {
+padding-left: .5em;
+padding-right: .5em;
 }
 footer { 
-background-color: #80CBC4;
 font-size: .60em;
 font-style: italic;
-text-align: center; 
-padding: 1em;
+text-align: center;
+}
+@media (min-width: 600px) { 
+nav ul {
+flex-flow: row nowrap;
+justify-content: flex-end;
+}
+nav li { width: 7em; }
+section {
+padding-;eft: 2em;
+padding-right: 2em;
+}
+#mathero, #loungehero {
+display: block;
+padding-bottom: 1em;
+}
+#flow {
+display: flex;
+flex-direction: row;
+}
+#mobile { display: none; }
+#desktop { display: inline; }
+}
+@media (min width: 1024px) {
+header { font-size: 120%; }
+.home {
+height: 50vh;
+padding-left: 8em;
+padding-top: 5em;
+}
+.content {
+height: 30vh;
+padding-left: 8em;
+padding-top: 1em;
+}
+#wrapper {
+margin: auto;
+width: 80%
+}
 }
