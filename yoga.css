@@ -10,7 +10,7 @@ background-color: #F5F5F5;
 padding: 2em;		   
 }
 header { 
-background-color: #80CBC4;
+background-color: #40407A;
 background-image: url(sunrise.jpg);
 background-size: 100% 100%;
 color: #FFF;
@@ -19,8 +19,8 @@ margin-top: 50px;
 min-height: 200px;
 }
 header a { text-decoration: none; }
-header a:link { color: #FFF; }
-header a:visited { color: #FFF; }
+header a:link       { color: #FFF; }
+header a:visited  { color: #FFF; }
 header a:hover { color: #EDF5F5; }
 .home, .conetent {
 height: 20vh;
@@ -65,14 +65,14 @@ height: 300px;
 display: none;
 }
 #loungehero { 
-background-imahe: url(yogalounge.jpg);
+background-image: url(yogalounge.jpg);
 background-repeat: no-repeat;
 background-size: cover;
 height: 300px;
 display: none;
 }
 #mobile { display: inline; }
-#desktop { display: none;}
+#desktop { display: none; }
 .studio { font-style: italic; }
 section {
 padding-left: .5em;
@@ -90,7 +90,7 @@ justify-content: flex-end;
 }
 nav li { width: 7em; }
 section {
-padding-;eft: 2em;
+padding-left: 2em;
 padding-right: 2em;
 }
 #mathero, #loungehero {
