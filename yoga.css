@@ -83,6 +83,22 @@ font-size: .60em;
 font-style: italic;
 text-align: center;
 }
+table {
+width:60%;
+margin: auto;
+margin-bottom:1em;
+border-collapse: collapse;
+}
+td, th {
+padding: 5px;
+border: 1px solid #3F2860;
+}
+tr:nth-of-type(even) {background-color: #DBE8E9;}
+caption {
+font-size:120%;
+margin: 1em;
+font-weight: bold;
+}
 @media (min-width: 600px) { 
 nav ul {
 flex-flow: row nowrap;
