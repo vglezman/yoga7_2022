@@ -99,41 +99,58 @@ font-size:120%;
 margin: 1em;
 font-weight: bold;
 }
+form { 
+display: flex;
+flex-direction: column;
+padding-left: 1em; width: 80%; 
+}
+input, textarea { margin-bottom: .5em; }
 @media (min-width: 600px) { 
-nav ul {
+nav ul { 
 flex-flow: row nowrap;
-justify-content: flex-end;
+justify-content: flex-end; 
 }
 nav li { width: 7em; }
-section {
+section { 
 padding-left: 2em;
-padding-right: 2em;
+padding-right: 2em; 
 }
-#mathero, #loungehero {
-display: block;
-padding-bottom: 1em;
+#mathero, #loungehero { 
+display: block; 
+padding-bottom: 1em; 
 }
-#flow {
+#flow { 
 display: flex;
-flex-direction: row;
+flex-direction: row; 
 }
 #mobile { display: none; }
 #desktop { display: inline; }
+form { 
+width: 60%;
+display: grid;
+grid-gap: 1em; gap: 1em;
+grid-template-columns: 12em 1fr; 
 }
-@media (min width: 1024px) {
+label { text-align: right; }
+input[type="submit"] { 
+grid-column: 2 / 3;
+width: 9em;		
+}
+}
+@media (min-width: 1024px) { 
 header { font-size: 120%; }
-.home {
+.home { 
 height: 50vh;
 padding-left: 8em;
 padding-top: 5em;
 }
-.content {
+.content { 
 height: 30vh;
 padding-left: 8em;
-padding-top: 1em;
+padding-top: 1em; 
 }
-#wrapper {
+#wrapper { 
 margin: auto;
-width: 80%
+width: 80%; 
 }
-}
+} 
